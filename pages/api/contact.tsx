@@ -1,46 +1,46 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
-import rateLimit from 'express-rate-limit';
 import validator from 'validator';
 
-// --- Rate Limiter Setup (limits: 5 requests / 10 minutes per IP)
-const limiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 10 minutes
-  max: 5,
-  handler: (_req, res) => {
-    return res.status(429).json({ error: 'Too many requests. Please try again later.' });
-  },
-});
+const rateLimitWindow = 10 * 60 * 1000; // 10 minutes
+const maxRequests = 5;
+const requests = new Map<string, number[]>();
 
-// --- Helper to run middleware inside Next.js API
-function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: any) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: unknown) => {
-      if (result instanceof Error) return reject(result);
-      return resolve(result);
-    });
-  });
+function rateLimiter(req: NextApiRequest, res: NextApiResponse) {
+  const ip =
+    (req.headers['x-forwarded-for'] as string)?.split(',')[0]?.trim() ||
+    req.socket.remoteAddress ||
+    'unknown';
+
+  const now = Date.now();
+  const timestamps = requests.get(ip) || [];
+  const filtered = timestamps.filter((time) => now - time < rateLimitWindow);
+
+  if (filtered.length >= maxRequests) {
+    res.status(429).json({ error: 'Too many requests. Please try again later.' });
+    return false;
+  }
+
+  filtered.push(now);
+  requests.set(ip, filtered);
+  return true;
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  await runMiddleware(req, res, limiter);
-
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  if (!rateLimiter(req, res)) return;
+
   const { name, email, message } = req.body;
 
-  // --- Basic validation
-  if (!name || !email || !message) {
+  if (!name || !email || !message)
     return res.status(400).json({ error: 'All fields are required.' });
-  }
 
-  if (!validator.isEmail(email)) {
+  if (!validator.isEmail(email))
     return res.status(400).json({ error: 'Invalid email address.' });
-  }
 
-  // --- Configure transporter
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -49,7 +49,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     },
   });
 
-  // --- Email Template (HTML)
   const htmlContent = `
   <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f8fafc; border-radius: 10px;">
     <h2 style="color: #2563eb;">New Contact Form Message</h2>
@@ -65,16 +64,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   </div>
   `;
 
-  const mailOptions = {
-    from: `"${name}" <${email}>`,
-    to: process.env.EMAIL_TO || process.env.EMAIL_USER,
-    subject: `📩 New message from ${name}`,
-    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    html: htmlContent,
-  };
-
   try {
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail({
+      from: `"${name}" <${email}>`,
+      to: process.env.EMAIL_TO || process.env.EMAIL_USER,
+      subject: `📩 New message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      html: htmlContent,
+    });
+
     return res.status(200).json({ success: true, message: 'Email sent successfully!' });
   } catch (err) {
     console.error('Email send failed:', err);

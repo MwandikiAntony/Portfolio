@@ -17,7 +17,7 @@ const Home = () => {
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           Hi, I'm <span className="text-blue-600">Antony Mwandiki</span>
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-600 max-w-2xl mx-auto mb-8">
           I’m a <span className="font-semibold">Full Stack Web Developer</span> with a background in 
           <span className="font-semibold"> Applied Physics and Computer Science</span>. I design and develop 
           robust, user-centered applications using modern technologies such as 
@@ -25,7 +25,7 @@ const Home = () => {
           <span className="font-semibold"> TypeScript</span>.
         </p>
 
-        <p className="text-gray-700 dark:text-gray-400 max-w-xl mx-auto mb-10">
+        <p className="text-gray-700 dark:text-gray-410 max-w-xl mx-auto mb-10">
           I’ve contributed to projects like <span className="font-semibold">Capital Bank of Kenya </span> 
           and  <span className="font-semibold"> Afya Diary Kenya</span>, focusing on digital transformation, 
           system performance, and intuitive user experiences.

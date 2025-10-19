@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bg-light: white;
+  --color-bg-dark: rgb(17 24 39); /* gray-900 */
+  --color-text-light: rgb(17 24 39); /* gray-900 */
+  --color-text-dark: rgb(243 244 246); /* gray-100 */
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
 }
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+

@@ -30,15 +30,15 @@ const posts = [
 ];
 
 const Blog = () => (
-  <section className="space-y-6">
-    <h2 className="text-3xl font-bold mb-4">Blog</h2>
-    <p className="text-gray-700 dark:text-gray-300 mb-6">
+  <section className="space-y-6 pt-24 px-6">
+    <h2 className="text-3xl font-bold mb-4">My Blog</h2>
+    <p className="text-gray-700 dark:text-gray-600 mb-6">
       I share insights, tutorials, and personal experiences from my journey as a full stack
       web developer. My blog focuses on modern web technologies, performance optimization,
       software engineering practices, and lessons from real-world projects.
     </p>
     {posts.map((post, i) => (
-      <div key={i} className="border-b pb-4">
+      <div key={i} className="border-b border-gray-200 dark:border-gray-700 pb-4">
         <h3 className="text-xl font-semibold">
           <a
             href={`/blog/${post.slug}`}
@@ -48,10 +48,11 @@ const Blog = () => (
           </a>
         </h3>
         <p className="text-sm text-gray-500">{new Date(post.date).toLocaleDateString()}</p>
-        <p className="text-gray-700 dark:text-gray-300 mt-1">{post.summary}</p>
+        <p className="text-gray-700 dark:text-gray-600 mt-1">{post.summary}</p>
       </div>
     ))}
   </section>
 );
+
 
 export default Blog;

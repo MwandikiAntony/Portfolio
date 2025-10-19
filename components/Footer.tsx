@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Right Section */}
         <div className="flex gap-6 justify-center sm:justify-end">
           <a
-            href="https://github.com/antonymwandiki"
+            href="https://github.com/MwandikiAntony"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -27,7 +27,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/antonymwandiki"
+            href="https://www.linkedin.com/in/antony-mwandiki-36a788255/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="mailto:antonymwandiki@gmail.com"
+            href="mailto:antonymwandiki26@gmail.com"
             aria-label="Email"
             className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition"
           >
