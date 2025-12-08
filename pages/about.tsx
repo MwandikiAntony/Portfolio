@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 
 const About = () => {
   const container = {
@@ -12,8 +12,17 @@ const About = () => {
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: easeOut, // ✅ FIXED
+      },
+    },
   };
+
+
 
   return (
     <motion.section
