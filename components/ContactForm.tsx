@@ -41,7 +41,7 @@ const ContactForm = () => {
         setStatus('❌ Something went wrong. Please try again later.');
         setAlertType('error');
       }
-    } catch (error) {
+    } catch {
       setStatus('⚠️ Network error. Please check your connection.');
       setAlertType('error');
     } finally {
