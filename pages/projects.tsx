@@ -10,7 +10,7 @@ const Projects = () => {
         'A secure and scalable digital banking web application designed to streamline financial operations for customers and administrators. It includes role-based access, transaction management, and an intuitive client dashboard.',
       stack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
       github: 'https://github.com/yourusername/capital-bank-kenya',
-      demo: 'https://capital-bank-demo.vercel.app',
+      demo: 'https://capital-bank-of-kenya.vercel.app/',
     },
     {
       title: 'Afya Diary Kenya – Digital Health Record System',
@@ -18,7 +18,7 @@ const Projects = () => {
         'A healthcare management system that connects patients, community health volunteers (CHVs), and healthcare facilities. Features include patient record tracking, OTP-based authentication, and secure data handling for improved healthcare delivery.',
       stack: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
       github: 'https://github.com/yourusername/afya-diary-kenya',
-      demo: 'https://afyadiarykenya.vercel.app',
+      demo: 'https://afya-diary-kenya.vercel.app/',
     },
     {
       title: 'EcoPulse Kenya – Sustainability Tracker 🌱',
@@ -34,7 +34,15 @@ const Projects = () => {
         'My personal portfolio built with Next.js and Tailwind CSS, showcasing my background in full stack web development, projects, and technical blog. Designed for performance, accessibility, and a clean modern aesthetic.',
       stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
       github: 'https://github.com/yourusername/portfolio',
-      demo: 'https://antonymwandiki.vercel.app',
+      demo: 'https://tonio-portfolio.vercel.app/',
+    },
+    {
+      title: 'PesaFlow – FinTech Payment Platform (In Development)',
+      description:
+        'A modern financial technology platform designed to streamline payments and transactions. Currently in development — features planned include secure user accounts, payment processing, transaction history, and analytics dashboard.',
+      stack: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+      github: 'https://github.com/yourusername/pesaflow',
+      demo: '#', 
     },
   ];
 
