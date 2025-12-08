@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         'A secure and scalable digital banking web application designed to streamline financial operations for customers and administrators. It includes role-based access, transaction management, and an intuitive client dashboard.',
       stack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/capital-bank-kenya',
+      github: 'https://github.com/MwandikiAntony/Capital-Bank-of-Kenya',
       demo: 'https://capital-bank-of-kenya.vercel.app/',
     },
     {
@@ -17,7 +17,7 @@ const Projects = () => {
       description:
         'A healthcare management system that connects patients, community health volunteers (CHVs), and healthcare facilities. Features include patient record tracking, OTP-based authentication, and secure data handling for improved healthcare delivery.',
       stack: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/afya-diary-kenya',
+      github: 'https://github.com/MwandikiAntony/afya-diary-kenya',
       demo: 'https://afya-diary-kenya.vercel.app/',
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
       description:
         'A responsive React web app that helps users track eco-friendly actions like recycling, planting trees, and conserving water. Includes gamification, progress tracking, eco-tips, dark mode, and persistent storage for daily motivation toward sustainability.',
       stack: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'Framer Motion'],
-      github: 'https://github.com/MwandikiAntony/ecopulse-kenya',
+      github: 'https://github.com/MwandikiAntony/Echo-Pulse-Kenya',
       demo: 'https://ecopulse-kenya.vercel.app',
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       description:
         'My personal portfolio built with Next.js and Tailwind CSS, showcasing my background in full stack web development, projects, and technical blog. Designed for performance, accessibility, and a clean modern aesthetic.',
       stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/portfolio',
+      github: 'https://github.com/MwandikiAntony/Portfolio',
       demo: 'https://tonio-portfolio.vercel.app/',
     },
     {
