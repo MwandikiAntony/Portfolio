@@ -21,6 +21,14 @@ const Projects = () => {
       demo: 'https://afyadiarykenya.vercel.app',
     },
     {
+      title: 'EcoPulse Kenya – Sustainability Tracker 🌱',
+      description:
+        'A responsive React web app that helps users track eco-friendly actions like recycling, planting trees, and conserving water. Includes gamification, progress tracking, eco-tips, dark mode, and persistent storage for daily motivation toward sustainability.',
+      stack: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'Framer Motion'],
+      github: 'https://github.com/MwandikiAntony/ecopulse-kenya',
+      demo: 'https://ecopulse-kenya.vercel.app',
+    },
+    {
       title: 'Antony Mwandiki Portfolio – Personal Developer Website',
       description:
         'My personal portfolio built with Next.js and Tailwind CSS, showcasing my background in full stack web development, projects, and technical blog. Designed for performance, accessibility, and a clean modern aesthetic.',
@@ -47,7 +55,7 @@ const Projects = () => {
     <section className="max-w-6xl mx-auto px-6 py-20 space-y-12">
       <div className="text-center space-y-4">
         <h2 className="text-4xl font-bold text-gray-900 dark:text-blue">Featured Projects</h2>
-        <p className="text-gray-600 dark:text-gray-600 max-w-2xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           A selection of projects I’ve designed and developed — combining functionality, scalability,
           and clean design.
         </p>

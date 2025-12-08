@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
 
       <section className="text-center py-24 px-6">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          Hi, I'm <span className="text-blue-600">Antony Mwandiki</span>
+          Hi, I’m <span className="text-blue-600">Antony Mwandiki</span>
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-600 max-w-2xl mx-auto mb-8">
           I’m a <span className="font-semibold">Full Stack Web Developer</span> with a background in 
@@ -32,18 +33,18 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center gap-4">
-          <a
+          <Link
             href="/projects"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
             View My Work
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition"
           >
             Get In Touch
-          </a>
+          </Link>
         </div>
       </section>
     </>
