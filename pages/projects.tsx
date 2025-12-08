@@ -39,9 +39,9 @@ const Projects = () => {
     {
       title: 'PesaFlow – FinTech Payment Platform (In Development)',
       description:
-        'A modern financial technology platform designed to streamline payments and transactions. Currently in development — features planned include secure user accounts, payment processing, transaction history, and analytics dashboard.',
+        'A modern financial technology platform designed to streamline payments and transactions. Features planned include secure user accounts, payment processing, transaction history, and analytics dashboard.',
       stack: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/pesaflow',
+      github: 'https://github.com/MwandikiAntony/PesaFlow',
       demo: '#', 
     },
   ];
