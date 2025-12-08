@@ -17,7 +17,7 @@ const Home = () => {
       <section className="text-center py-24 px-6">
         {/* Headline */}
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          Hi, I’m <span className="text-blue-600">Antony Mwandiki</span>| Full Stack Software Developer
+          Hi, I’m <span className="text-blue-600">Antony Mwandiki</span> -   Full Stack Software Developer
         </h1>
 
         {/* About Section */}
