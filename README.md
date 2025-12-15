@@ -57,7 +57,7 @@ This portfolio serves as a **technical and professional representation** of my w
 ---
 
 ## Architecture Overview
-
+```
 ├── components/ # Reusable UI components
 ├── context/ # Global theme management
 ├── pages/ # Next.js pages & API routes
@@ -66,8 +66,8 @@ This portfolio serves as a **technical and professional representation** of my w
 ├── public/ # Static assets
 └── tailwind.config.js
 
-yaml
-Copy code
+```
+
 
 **Design Principles Applied:**
 - Component reusability
@@ -116,6 +116,7 @@ Copy code
 npm run dev
 Application runs at:
 👉 http://localhost:3000
+```
 
 Deployment
 The project is deployed on Vercel using:
