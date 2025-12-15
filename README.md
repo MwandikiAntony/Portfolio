@@ -1,33 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Antony Mwandiki – Portfolio Website
 
-## Getting Started
+🚀 **Live Demo:** https://tonio-portfolio.vercel.app/
 
-First, run the development server:
+A modern, responsive personal portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and professional background as a **Full Stack Software Developer**.
 
+---
+
+## ✨ Features
+
+- ⚡ Built with **Next.js + TypeScript**
+- 🎨 Modern UI using **Tailwind CSS**
+- 🌙 Light / Dark mode toggle
+- 📱 Fully responsive (mobile-first)
+- 🧭 Smooth scrolling single-page layout
+- 🎬 Animations with **Framer Motion**
+- 📩 Functional contact form (server-side email handling)
+- 🚀 Deployed on **Vercel**
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Email Handling:** Nodemailer
+- **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+├── components/
+│ ├── Navbar.tsx
+│ ├── Footer.tsx
+│ ├── About.tsx
+│ ├── Projects.tsx
+│ ├── Blog.tsx
+│ └── Contact.tsx
+├── context/
+│ └── ThemeContext.tsx
+├── pages/
+│ ├── index.tsx
+│ └── api/
+│ └── contact.ts
+├── styles/
+│ └── globals.css
+├── public/
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started Locally
+
+### 1️⃣ Clone the repository
 ```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2️⃣ Install dependencies
+bash
+Copy code
+npm install
+3️⃣ Create environment variables
+Create a .env.local file in the root directory:
+
+env
+Copy code
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+EMAIL_TO=your-email@gmail.com
+⚠️ Use a Gmail App Password, not your normal Gmail password.
+
+4️⃣ Run the development server
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view it in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📬 Contact Form
+The contact form sends emails securely using Nodemailer via a Next.js API route.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Server-side validation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Rate-limited to prevent abuse
 
-## Learn More
+Environment variables protected on deployment
 
-To learn more about Next.js, take a look at the following resources:
+📸 Preview
+🔗 Live Site:
+👉 https://tonio-portfolio.vercel.app/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👨‍💻 About Me
+I’m Antony Mwandiki, a Full Stack Software Developer with a background in Applied Physics and Computer Science.
+I specialize in building scalable, user-focused web applications using modern technologies.
 
-## Deploy on Vercel
+⭐ Support
+If you like this project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⭐ Star the repository
+
+🧑‍💻 Fork it
+
+📢 Share it
 
