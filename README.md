@@ -1,112 +1,152 @@
-# Antony Mwandiki – Portfolio Website
+# Antony Mwandiki — Full Stack Software Developer
 
-🚀 **Live Demo:** https://tonio-portfolio.vercel.app/
+🔗 **Live Portfolio:** https://tonio-portfolio.vercel.app/
 
-A modern, responsive personal portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and professional background as a **Full Stack Software Developer**.
-
----
-
-## ✨ Features
-
-- ⚡ Built with **Next.js + TypeScript**
-- 🎨 Modern UI using **Tailwind CSS**
-- 🌙 Light / Dark mode toggle
-- 📱 Fully responsive (mobile-first)
-- 🧭 Smooth scrolling single-page layout
-- 🎬 Animations with **Framer Motion**
-- 📩 Functional contact form (server-side email handling)
-- 🚀 Deployed on **Vercel**
+A production-ready personal portfolio built with **Next.js and TypeScript**, designed to showcase my engineering skills, professional experience, and real-world projects in a clean, performant, and recruiter-friendly manner.
 
 ---
 
-## 🛠 Tech Stack
+## Professional Summary
 
-- **Framework:** Next.js
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Email Handling:** Nodemailer
-- **Deployment:** Vercel
+I am a **Full Stack Software Developer** with a background in **Applied Physics and Computer Science**, experienced in building **scalable, maintainable, and user-focused web applications**.
+
+My work focuses on:
+- Clean architecture and maintainable code
+- Performance-driven UI development
+- Secure backend integrations
+- Modern frontend engineering practices
+
+This portfolio serves as a **technical and professional representation** of my work, skills, and approach to software development.
 
 ---
 
-## 📂 Project Structure
+## Core Skills & Technologies
 
-├── components/
-│ ├── Navbar.tsx
-│ ├── Footer.tsx
-│ ├── About.tsx
-│ ├── Projects.tsx
-│ ├── Blog.tsx
-│ └── Contact.tsx
-├── context/
-│ └── ThemeContext.tsx
-├── pages/
-│ ├── index.tsx
-│ └── api/
-│ └── contact.ts
-├── styles/
-│ └── globals.css
-├── public/
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
+### Frontend
+- Next.js (Pages Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Responsive & Accessible UI Design
+
+### Backend & APIs
+- Node.js
+- Next.js API Routes
+- Nodemailer (Email services)
+- Server-side validation & rate limiting
+
+### Tooling & Deployment
+- Git & GitHub
+- Vercel (Production deployment)
+- Environment-based configuration
+- ESLint & TypeScript strict typing
+
+---
+
+## Key Features
+
+- **Modern UI/UX** with responsive design
+- **Light & Dark mode** using a global theme context
+- **Smooth animations** with Framer Motion
+- **Single-page scroll layout** for intuitive navigation
+- **Secure contact form** with server-side email handling
+- **Production deployment** on Vercel
+- **SEO-ready** metadata configuration
+
+---
+
+## Architecture Overview
+
+├── components/ # Reusable UI components
+├── context/ # Global theme management
+├── pages/ # Next.js pages & API routes
+│ └── api/contact.ts # Server-side email handling
+├── styles/ # Global styles
+├── public/ # Static assets
+└── tailwind.config.js
 
 yaml
 Copy code
 
+**Design Principles Applied:**
+- Component reusability
+- Separation of concerns
+- Type safety across the codebase
+- Scalable project structure
+
 ---
 
-## 🚀 Getting Started Locally
+## Contact Form (Technical Overview)
 
-### 1️⃣ Clone the repository
+The contact form is implemented using:
+- **Next.js API routes** (server-side)
+- **Nodemailer** for email delivery
+- **Input validation** using `validator`
+- **Rate limiting** to prevent abuse
+- **Environment variables** for credential security
+
+This ensures reliability, security, and production readiness.
+
+---
+
+## Local Development Setup
+
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-2️⃣ Install dependencies
+2. Install dependencies
 bash
 Copy code
 npm install
-3️⃣ Create environment variables
-Create a .env.local file in the root directory:
+3. Environment variables
+Create a .env.local file:
 
 env
 Copy code
 EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password
+EMAIL_PASS=your-gmail-app-password
 EMAIL_TO=your-email@gmail.com
-⚠️ Use a Gmail App Password, not your normal Gmail password.
+Note: Gmail requires an App Password when 2-Step Verification is enabled.
 
-4️⃣ Run the development server
+4. Run locally
 bash
 Copy code
 npm run dev
-Open http://localhost:3000 to view it in the browser.
+Application runs at:
+👉 http://localhost:3000
 
-📬 Contact Form
-The contact form sends emails securely using Nodemailer via a Next.js API route.
+Deployment
+The project is deployed on Vercel using:
 
-Server-side validation
+Automatic builds from GitHub
 
-Rate-limited to prevent abuse
+Environment variable configuration
 
-Environment variables protected on deployment
+Optimized Next.js production settings
 
-📸 Preview
-🔗 Live Site:
+Live URL:
 👉 https://tonio-portfolio.vercel.app/
 
-👨‍💻 About Me
-I’m Antony Mwandiki, a Full Stack Software Developer with a background in Applied Physics and Computer Science.
-I specialize in building scalable, user-focused web applications using modern technologies.
+Why This Portfolio Matters
+This project demonstrates:
 
-⭐ Support
-If you like this project:
+Real-world frontend engineering skills
 
-⭐ Star the repository
+Production-level backend integration
 
-🧑‍💻 Fork it
+Attention to performance, UX, and security
 
-📢 Share it
+Ability to deliver and deploy complete web solutions
 
+It reflects how I approach professional software development, not just design.
+
+About Me
+Antony Mwandiki
+Full Stack Software Developer
+
+I am passionate about building impactful digital solutions and continuously improving my technical skills through real-world projects and collaboration.
+
+License
+MIT License — open for learning and reuse with attribution.
