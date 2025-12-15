@@ -96,24 +96,26 @@ This ensures reliability, security, and production readiness.
 ```
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-2. Install dependencies
+```
 
+### 2. Install dependencies
 npm install
-3. Environment variables
-Create a .env.local file:
-
-env
+```
+```
+### 3. Environment variables
+Create a .env.local file and add:
 
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-gmail-app-password
 EMAIL_TO=your-email@gmail.com
-
-
-4. Run locally
+```
+```
+### 4. Run locally
 
 npm run dev
 Application runs at:
 👉 http://localhost:3000
+```
 ```
 ---
 ## Deployment
