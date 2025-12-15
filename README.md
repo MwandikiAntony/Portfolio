@@ -99,24 +99,24 @@ cd your-repo-name
 ```
 
 ### 2. Install dependencies
+```
 npm install
 ```
-```
+
 ### 3. Environment variables
 Create a .env.local file and add:
-
+```
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-gmail-app-password
 EMAIL_TO=your-email@gmail.com
 ```
-```
-### 4. Run locally
 
+### 4. Run locally
+```
 npm run dev
-Application runs at:
-👉 http://localhost:3000
+Application runs at: http://localhost:3000
 ```
-```
+
 ---
 ## Deployment
 The project is deployed on Vercel using:
