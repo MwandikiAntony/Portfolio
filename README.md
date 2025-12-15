@@ -93,61 +93,54 @@ This ensures reliability, security, and production readiness.
 ## Local Development Setup
 
 ### 1. Clone the repository
-```bash
+```
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 2. Install dependencies
-bash
-Copy code
+
 npm install
 3. Environment variables
 Create a .env.local file:
 
 env
-Copy code
+
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-gmail-app-password
 EMAIL_TO=your-email@gmail.com
-Note: Gmail requires an App Password when 2-Step Verification is enabled.
+
 
 4. Run locally
-bash
-Copy code
+
 npm run dev
 Application runs at:
 👉 http://localhost:3000
 ```
-
-Deployment
+---
+## Deployment
 The project is deployed on Vercel using:
 
-Automatic builds from GitHub
+- Automatic builds from GitHub
 
-Environment variable configuration
+- Environment variable configuration
 
-Optimized Next.js production settings
+- Optimized Next.js production settings
 
-Live URL:
-👉 https://tonio-portfolio.vercel.app/
-
-Why This Portfolio Matters
-This project demonstrates:
-
-Real-world frontend engineering skills
-
-Production-level backend integration
-
-Attention to performance, UX, and security
-
-Ability to deliver and deploy complete web solutions
+---
+## Why This Portfolio Matters
+This project demonstrates my:
+- Real-world frontend engineering skills
+- Production-level backend integration
+- Attention to performance, UX, and security
+- Ability to deliver and deploy complete web solutions
 
 It reflects how I approach professional software development, not just design.
 
-About Me
+---
+## About Me
 Antony Mwandiki
 Full Stack Software Developer
 
 I am passionate about building impactful digital solutions and continuously improving my technical skills through real-world projects and collaboration.
-
+---
 License
 MIT License — open for learning and reuse with attribution.
