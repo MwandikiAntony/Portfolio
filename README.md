@@ -2,7 +2,7 @@
 
 🔗 **Live Portfolio:** https://tonio-portfolio.vercel.app/
 
-A production-ready personal portfolio built with **Next.js and TypeScript**, designed to showcase my engineering skills, professional experience, and real-world projects in a clean, performant, and recruiter-friendly manner.
+This is a production ready personal portfolio built with **Next.js and TypeScript**, designed to showcase my engineering skills, professional experience, and real-world projects in a clean, performant, and recruiter-friendly manner.
 
 ---
 
