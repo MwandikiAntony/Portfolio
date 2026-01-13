@@ -1,4 +1,4 @@
-# Antony Mwandiki — Full Stack Software Developer
+# Antony Mwandiki: Full Stack Software Developer
 
 🔗 **Live Portfolio:** https://tonio-portfolio.vercel.app/
 
